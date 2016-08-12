@@ -41,3 +41,5 @@ def playAgain():
 	else:
 		return False
 
+def makeMove(board, letter, move):
+	board[move] == letter
