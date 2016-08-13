@@ -1,4 +1,5 @@
 import random
+import copy
 
 def drawBoard(board):
 	# This function prints out the board that it was passed.
@@ -52,3 +53,9 @@ def isWinner(board, letter):
 	(board[7] == board[8] == board[9] == letter) or (board[1] == board[4] == board[7] == letter) or
 	(board[2] == board[5] == board[8] == letter) or (board[3] == board[6] == board[9] == letter) or
 	(board[1] == board[5] == board[9] == letter) or (board[3] == board[5] == board[7] == letter))
+
+
+def getBoardCopy(board):
+	duplicateBoard = []
+	duplicateBoard = copy.deepcopy(board)
+	return duplicateBoard
