@@ -43,3 +43,12 @@ def playAgain():
 
 def makeMove(board, letter, move):
 	board[move] == letter
+
+def isWinner(board, letter):
+	#naive approach to check if the computer/player assigned the given letter won or not
+	#this will be checked everytime after the computer or player makes a move
+	#returns a boolean value
+	return ((board[1] == board[2] == board[3] == letter) or (board[4] == board[5] == board[6] == letter) or
+	(board[7] == board[8] == board[9] == letter) or (board[1] == board[4] == board[7] == letter) or
+	(board[2] == board[5] == board[8] == letter) or (board[3] == board[6] == board[9] == letter) or
+	(board[1] == board[5] == board[9] == letter) or (board[3] == board[5] == board[7] == letter))
