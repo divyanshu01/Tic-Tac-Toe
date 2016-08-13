@@ -59,3 +59,12 @@ def getBoardCopy(board):
 	duplicateBoard = []
 	duplicateBoard = copy.deepcopy(board)
 	return duplicateBoard
+
+
+def isSpaceFree(board, move):
+	#the function checks for free space at the location if its free or not
+	#it returns a boolean value
+	if board[move] == 'X' or board[move] == 'O':
+		return False
+	else:
+		return True
