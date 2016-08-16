@@ -68,3 +68,12 @@ def isSpaceFree(board, move):
 		return False
 	else:
 		return True
+
+
+def getPlayerMove(board):
+	#the function is for player to let in their moves
+	move = ' '
+	while move not in '1 2 3 4 5 6 7 8 9'.split(' ') or not isSpaceFree(board, move):
+		print('What is your next move? (1-9)')
+		move input()
+	return int(move)
