@@ -77,3 +77,7 @@ def getPlayerMove(board):
 		print('What is your next move? (1-9)')
 		move input()
 	return int(move)
+
+
+def chooseRandomMoveFromList(board, movesList):
+	
