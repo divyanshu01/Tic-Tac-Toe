@@ -80,4 +80,8 @@ def getPlayerMove(board):
 
 
 def chooseRandomMoveFromList(board, movesList):
-	
+	possibleMoves = []
+	for i in movesList:
+		if isSpaceFree(board, i):
+			possibleMoves.append(i)
+
